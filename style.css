@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-align:center;
+}
+
+.gameapp{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    flex-direction:column;
+}
+
+
+.gamearea{
+    height:500px;
+    width:500px;
+    /* border:1px solid ; */
+    display:grid;
+    grid-template-columns:repeat(8,1fr)
+}
+
+.grid{
+    height:100%;
+    width:100%;
+    border:1px solid black;
+}
+
+.top-row{
+    border-top:none;
+}
+
+.top-row::after{
+    content:"Drop Column"
+}
+
+
+.red{
+    background:red;
+}
+
+
+.blue{
+    background:blue;
+}
